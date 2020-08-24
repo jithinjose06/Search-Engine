@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<link rel = "stylesheet" href ="{{url_for('static',filename='css/style.css')}}">
+		<title>
+			Search Engine
+		</title>
+	</head>
+	<body>
+		<div class = "logo">
+			<h1>Search</h1>
+		</div>
+		<div class = "search_bar">
+			<form id = "form" method = "post" action = "/search">
+				<input class = "input_text" placeholder="Type to Search" type = "text" name="query">
+				<input type = "submit" value = "Search">
+			</form>
+		</div>
+	</body>
+</html>

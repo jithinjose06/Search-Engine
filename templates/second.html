@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link rel = "stylesheet" href ="{{url_for('static',filename='css/style.css')}}">
+		<title>
+			Search Engine
+		</title>
+	</head>
+	<body>
+		<div class = "logo_second">
+			<h1>Search</h1>
+		</div>
+		<div class = "search_bar_second">
+			<form id = "form" method = "post" action = "/search">
+				<input class = "input_text" placeholder="Type to Search" type = "text" name="query">
+				<input id="search_button" type = "image" src='arrow.png' height="45">
+			</form>
+		</div>
+		<div class="list_links">
+			<ul id="first">
+				{% for d in data %}
+				<li id="outer">
+					<ul id="second">
+						<li>{{d.url}}</li>
+						<li><a href={{d.url}}>{{d.title}}</a></li>
+						<li>{{d.description}}</li>
+					</ul>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>

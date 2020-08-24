@@ -1,0 +1,77 @@
+
+body {
+
+	margin:0;
+	padding:0;
+	background-color:#f5f6fa;
+}
+
+.logo {
+
+	position: absolute;
+	top: 33% ;
+	left:45% ;
+	font-size: 30px;
+	font-family: Helvetica,sans-serif;
+	color: #40739e;
+}
+
+.logo_second {
+
+	position: absolute;
+	top: 2% ;
+	left:3% ;
+	font-size: 15px;
+	font-family: Helvetica,sans-serif;
+	color: #40739e;
+}
+
+.search_bar {
+
+	position: absolute;
+	top: 50% ;
+	left:28% ;
+}
+
+.search_bar_second {
+
+	position: absolute;
+	top: 4.5% ;
+	left:15% ;
+}
+.input_second {
+
+	width:200%;
+	padding: 12px 20px;
+	background-image: url('search.png');
+  	background-position: 10px 10px;
+  	background-repeat: no-repeat;
+  	padding-left: 40px; 
+  	border-radius: 50px;
+  	font-size: 15px;
+  	border-width: 1px;
+
+}
+
+.input_text {
+	width:300%;
+	padding: 12px 20px;
+	background-image: url('search.png');
+  	background-position: 10px 10px;
+  	background-repeat: no-repeat;
+  	padding-left: 40px; 
+  	border-radius: 50px;
+  	font-size: 15px;
+  	border-width: 1px;
+  	
+}
+
+input:hover
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:focus {
+
+	outline:none;
+}
